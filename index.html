@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Roman Vasilyev portfolio page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__logo">RV</li>
+          <li class="nav__link"><a href="#testament">Home</a></li>
+          <li class="nav__link"><a href="#projects">Projects</a></li>
+          <li class="nav__link"><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <article class="content__article">
+        <h2 id="testament" class="content__article--heading2">Who I am</h2>
+        <p>
+          Hello, my name is Roman. I am a web developer from Moscow, Russia. 
+        </p>
+        <p>
+          This is my first page. I am proud of putting it out to the internet,
+          even though it is simple and plain.
+          The page is meant to show my skills and knowledge disregarding how small is the extent thereof.
+          As I do progress the page will evolve as well.
+        </p>
+      </article>
+      <article class="content__article">
+        <h2 id="overview" class="content__article--heading2">What I stand for</h2>
+        <p>
+          While learning web development I started analyzing web content and
+          decided to create a short list of common requirements 
+          that I see important and often times find lacking on web sites.
+        </p>
+        <h3 class="content__article--heading3">Mobile friendliness</h3>
+        <p>
+          As of now I mostly use mobile devices for searching internet and looking through new content. 
+          At the same time I see throngs of people with smartphones around 
+          and realize that most of them make do with desktop computers only occasionally. 
+          Thus mobile friendly responsive design is key in modern world.
+        </p>
+        <p>
+          In addition to content layout a usual problem is touch support on web pages. 
+          Sometimes an interface is hard to use on mobile - that is bearable, though frustrating. 
+          Sometimes a website is developed with desktop users in mind 
+          and there is no way to use some features with touchscreen - 
+          because conventional mouse events are used which might have no duplicating touch counterparts.
+        </p>
+        <h3 class="content__article--heading3">Accessibility</h3>
+        <p>
+          I like going through learning materials but do not have a lot of time for it. 
+          Thus it often happens on my way in metro, where I prefer listening to material 
+          instead of watching or reading. 
+          My best friend is a screen reader: even though far from perfect it helps me a lot. 
+          The problem arising is accessibility of pages. 
+          The screen reader helps me seeing how little some page owners 
+          care about their content being accessible.
+        </p>
+      </article>
+      <article class="content__article">
+        <h2 id="skillset" class="content__article--heading2">Where I am and where I go</h2>
+        <p>
+          I am learning. I have some programming background 
+          and therefore working through language features is not a problem. 
+          My current focus is on general principles of web design and getting practice.
+          Here is the list of resources I have been using and recommend them to others:
+        </p>
+        <ul class="content__list">
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer">MDN front-end web developer</a> (in process) 
+            - one of the best resources covering the very basics. 
+            Stretching beyond the course and investigating the contents of numerous links 
+            provided throughout the course one finds endless resources for learning. 
+            Therefore the course gives both instant knowledge and references for future.
+          </li>
+          <li>
+            <a href="http://fullstackopen.com/">Full stack open</a> 
+            - a great course covering little bits of everything. 
+            It includes both frond-end and backend projects. 
+            Even though it does not give a lot of depth, 
+            there are a lot of links to learn more on each topic.
+            While the material is great, it is based on a number of frameworks 
+            and requires some prior knowledge of HTML, CSS and JS basics. 
+            Otherwise one can learn how to use a library 
+            but end up seeing it as a black box. 
+            My recommendation is to go for this course after learning some "vanilla" ways of doing staff.
+          </li>
+        </ul>
+        <p>
+          And this is my plan for the nearest future:
+        </p>
+        <ul>
+          <li>
+            <a href="http://projectodin.com/">Project Odin</a>
+          </li>
+          <li>
+            <a href="https://cybersecuritybase.mooc.fi/">Cyber Security Base 2021</a> 
+            - a free course series by University of Helsinki on cyber security.
+          </li>
+        </ul>
+      </article>
+      <article class="content__article">
+        <h2 id="projects" class="content__article--heading2">What I do</h2>
+        <p>
+          Here go my projects. There is not a lot to show. Hence I include some planned items.
+        </p>
+        <ul class="content__list">
+          <li>Stopwatch</li>
+          <li>Calculator</li>
+          <li>
+            <a href="https://blog-list-rv.herokuapp.com">List of blog posts</a> 
+            - this is a small web app created during FullstackOpen course.
+            It consists of React-based front-end, Node.js back-end 
+            and cloud based MongoDB database. Also included are some basic tests 
+            and Github Actions for testing and deployment. 
+            I use it occasionally to save some links to interesting posts 
+            for reading some time in the future.
+          </li>
+          <li>To do list</li>
+          <li>Shooting game</li>
+        </ul>
+      </article>
+      <article id="contacts" class="content__article">
+        <p>
+          Send me an email: <a href="mailto:roman.m.vasilyev@gmail.com">roman.m.vasilyev@gmail.com</a>
+        </p>
+      </article>
+    </main>
+    <footer>
+      <ul class="foot">
+        <li class="foot__link"><a id="github-link" target="blank" href="https://github.com/Roma-V">Github</a></li>
+        <li class="foot__link"><a id="linkedin-link" target="blank" href="https://www.linkedin.com/in/roma-vass-39a869ba">LinkedIn</a></li>
+        <li class="foot__link"><a id="email-link" href="mailto:roman.m.vasilyev@gmail.com">Email</a></li>
+      </ul>
+      <div id="copyright">Copyright &copy 2021 | Roman Vasilyev</div>
+    </footer>
+  </body>
+</html>

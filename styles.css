@@ -1,0 +1,215 @@
+/* Set main properties of the page;
+    - zero out margins and padding;
+    - stretch to full viewport;
+    - set page font. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color: #eee;
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Main style for the header and footer components */
+header, footer {
+    background-color: mediumseagreen;
+    color: white;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0rem 1rem gray;
+}
+
+/* Main style for the main area */
+main p {
+    margin: 1em 0;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #F2FEF5;
+    background-color: #f0fff5;
+    border-bottom: 1px solid;
+}
+a:link {
+    color: #035030;
+}
+a:visited {
+    color: gray;
+}
+a:focus,
+a:hover {
+    background-color: #ccfadc;
+}
+a:active {
+    border-bottom: none;
+}
+
+/* Custom classes */
+
+/* Header and footer navigation blocks */
+.nav {
+    display: block;
+    height: 100%;
+    margin: 0;
+}
+.nav__list,
+.foot {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    list-style: none;
+}
+.nav__list {
+    white-space: nowrap;
+}
+.foot {
+    margin-top: 1em;
+}
+
+.nav__logo,
+.nav__link,
+.foot__link {
+    display: inline-block;
+}
+
+.nav__logo {
+    font-size: 2em;
+    border: 5px solid white;
+    padding: 10px;
+    margin-right: 0.5em;
+}
+
+.nav__link {
+    font-size: 1.6em;
+    height: 4em;
+    line-height: 4em;
+}
+.nav__link a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 1em;
+    outline: none;
+    text-decoration: none;
+    color: #F2FEF5;
+    background-color: mediumseagreen;
+    border: none;
+}
+.nav__link a:focus,
+.nav__link a:hover,
+.nav__link a:active {
+    background-color: white;
+    color: mediumseagreen;
+}
+
+/* Main block */
+.content {
+    flex-grow: 1;
+    background-color: white;
+    box-shadow: 0 0 2rem #aaa;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.content__article {
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+
+.content__article:hover {
+    box-shadow: 0 0 1rem #ddd;
+}
+
+.content__article--heading2 {
+    font-size: 1.6em;
+}
+
+.content__article--heading3 {
+    font-size: 1.2em;
+}
+
+.content__article--heading2,
+.content__article--heading3 {
+    color: rgb(53, 155, 99);
+    text-decoration: underline;
+    line-height: 1.8em;
+}
+.content__article--heading2:focus,
+.content__article--heading2:hover {
+    text-decoration: none;
+}
+
+.content__list {
+    padding-left: 1em;
+}
+
+#contacts {
+    text-align: center;
+}
+
+
+/* Footer */
+.foot__link a {
+    display: inline-block;
+    color: black;
+}
+.foot__link a:focus,
+.foot__link a:hover {
+    border-bottom: none;
+}
+#github-link {
+    background: url('icons/GitHub-Mark-32px.png') no-repeat 0 0;
+    background-size: 1em 1em;
+    padding-left: calc(1em + 2px);
+}
+#linkedin-link {
+    background: url('icons/Linkedin-30px.png') no-repeat 0 0;
+    background-size: 1em 1em;
+    padding-left: calc(1em + 2px);
+}
+#email-link {
+    background: url('icons/Mailbox-24px.png') no-repeat 0 0;
+    background-size: 1em 1em;
+    padding-left: calc(1em + 2px);
+}
+
+#copyright {
+    margin: 1em auto;
+    width: fit-content;
+}
+
+/* Queries */
+/* Screen size:
+    - initial state is optimized for small screens;
+    - additional queries run for wider screens. */
+@media screen and (max-width: 350px) {
+    .nav__link a {
+        padding: 0 0.5em;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 1.5rem;
+    }
+}
