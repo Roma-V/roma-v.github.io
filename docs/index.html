@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Roman Vasilyev portfolio page</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
@@ -73,14 +74,14 @@
         </p>
         <ul class="content__list">
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer">MDN front-end web developer</a> (in process) 
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer" target="_blank">MDN front-end web developer</a> (in process) 
             - one of the best resources covering the very basics. 
             Stretching beyond the course and investigating the contents of numerous links 
             provided throughout the course one finds endless resources for learning. 
             Therefore the course gives both instant knowledge and references for future.
           </li>
           <li>
-            <a href="http://fullstackopen.com/">Full stack open</a> 
+            <a href="http://fullstackopen.com/" target="_blank">Full stack open</a> 
             - a great course covering little bits of everything. 
             It includes both frond-end and backend projects. 
             Even though it does not give a lot of depth, 
@@ -97,10 +98,10 @@
         </p>
         <ul>
           <li>
-            <a href="http://projectodin.com/">Project Odin</a>
+            <a href="http://projectodin.com/" target="_blank">Project Odin</a>
           </li>
           <li>
-            <a href="https://cybersecuritybase.mooc.fi/">Cyber Security Base 2021</a> 
+            <a href="https://cybersecuritybase.mooc.fi/" target="_blank">Cyber Security Base 2021</a> 
             - a free course series by University of Helsinki on cyber security.
           </li>
         </ul>
@@ -111,10 +112,23 @@
           Here go my projects. There is not a lot to show. Hence I include some planned items.
         </p>
         <ul class="content__list">
-          <li>Stopwatch</li>
-          <li>Calculator</li>
           <li>
-            <a href="https://blog-list-rv.herokuapp.com">List of blog posts</a> 
+            <a href="https://roma-v.github.io/stopwatch/" target="_blank">Stopwatch</a>
+            - I like keeping track of how much time I spend on things
+            and doing scrum-like sprints for long running tasks.
+            I was frustrated with some native timers as well as online ones.
+            Finally decided to make my own version that is available online 
+            and use the minimum but essential functionality.
+          </li>
+          <li>Calculator - the same story as the stopwatch.
+            Once upon a time I had to work on restricted Windows system 
+            with no calculator and no reasonable way to install it.
+            There are decent online options. 
+            However poor keyboard support sometimes might drive me mad. 
+            Therefore decided I need to make one that suits my needs.
+          </li>
+          <li>
+            <a href="https://blog-list-rv.herokuapp.com" target="_blank">List of blog posts</a> 
             - this is a small web app created during FullstackOpen course.
             It consists of React-based front-end, Node.js back-end 
             and cloud based MongoDB database. Also included are some basic tests 
@@ -122,8 +136,30 @@
             I use it occasionally to save some links to interesting posts 
             for reading some time in the future.
           </li>
-          <li>To do list</li>
-          <li>Shooting game</li>
+          <li>
+            To do list - I mostly use Trello, but some simple reminder list would not hurt.
+          </li>
+          <li>
+            <a href="https://shooting-ground.glitch.me/" target="_blank">Shooting game</a>
+            (WIP) - a game prototype made with Phaser engine. 
+            The idea came when I looked through various game jams and got
+            really impressed with "One Button Jam" rules:
+            making a game controlled with a single button. 
+            At first it seemed too restrictive, 
+            however seems like I managed to squeeze myself into. 
+            The game is playable, but requires some further refinements 
+            in order to count as a real game. 
+          </li>
+          <li>
+            <a href="https://draggable-text.glitch.me/" target="_blank">Draggable text</a>
+            - a whiteboard with stickers. Inspired by English CLub TV show 
+            where you are presented with a collection of words shown on the screen
+            as a random sequence and asked to construct a meaningful sentence. 
+            I made a similar board where one can input text which is then split into words, 
+            the words are shuffled and presented. The app was meant to help my wife with her 
+            online classes. She tried some native apps, but they were either not a good fit 
+            for the task or did not support Russian language.
+          </li>
         </ul>
       </article>
       <article id="contacts" class="content__article">
@@ -138,7 +174,14 @@
         <li class="foot__link"><a id="linkedin-link" target="blank" href="https://www.linkedin.com/in/roma-vass-39a869ba">LinkedIn</a></li>
         <li class="foot__link"><a id="email-link" href="mailto:roman.m.vasilyev@gmail.com">Email</a></li>
       </ul>
-      <div id="copyright">Copyright &copy 2021 | Roman Vasilyev</div>
+      <div id="copyright">Copyright &copy; 2021 | Roman Vasilyev</div>
+      <p class="foot__compliance">
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Правильный CSS!" />
+        </a>
+      </p>
     </footer>
   </body>
 </html>

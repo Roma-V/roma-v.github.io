@@ -1,12 +1,6 @@
 /* Set main properties of the page;
-    - zero out margins and padding;
     - stretch to full viewport;
     - set page font. */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html, body {
     background-color: #eee;
     font-size: 10px;
@@ -22,7 +16,6 @@ header, footer {
 }
 
 header {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     box-shadow: 0 0rem 1rem gray;
@@ -171,6 +164,11 @@ a:active {
 .foot__link a:hover {
     border-bottom: none;
 }
+
+.foot__compliance {
+    text-align: center;
+}
+
 #github-link {
     background: url('icons/GitHub-Mark-32px.png') no-repeat 0 0;
     background-size: 1em 1em;
