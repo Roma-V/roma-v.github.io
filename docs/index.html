@@ -101,7 +101,7 @@
             <a href="http://projectodin.com/" target="_blank">Project Odin</a>
           </li>
           <li>
-            <a href="https://cybersecuritybase.mooc.fi/" target="_blank">Cyber Security Base 2021</a> 
+            <a href="https://cybersecuritybase.mooc.fi/" target="_blank">Cyber Security Base</a> 
             - a free course series by University of Helsinki on cyber security.
           </li>
         </ul>
@@ -146,9 +146,13 @@
             really impressed with "One Button Jam" rules:
             making a game controlled with a single button. 
             At first it seemed too restrictive, 
-            however seems like I managed to squeeze myself into. 
-            The game is playable, but requires some further refinements 
-            in order to count as a real game. 
+            however eventually I managed to squeeze myself into and come up with something decent. 
+            The game is playable, but requires some further refinements. 
+            The "one button" that controls the game is the screen (canvas element). 
+            The game is controlled with three clicks: 
+            the first one starts vertical aim positioning then switch to horizontal mode 
+            and finally on the third click a shot is done. 
+            Try to gain as much score as you can with the 10 shots available.
           </li>
           <li>
             <a href="https://draggable-text.glitch.me/" target="_blank">Draggable text</a>
@@ -156,9 +160,13 @@
             where you are presented with a collection of words shown on the screen
             as a random sequence and asked to construct a meaningful sentence. 
             I made a similar board where one can input text which is then split into words, 
-            the words are shuffled and presented. The app was meant to help my wife with her 
-            online classes. She tried some native apps, but they were either not a good fit 
-            for the task or did not support Russian language.
+            the words are shuffled and presented. The app was meant to help my wife with teaching 
+            her online classes. She tried some native apps, but they were either not a good fit 
+            for the task or did not support Russian language. 
+            The solution is based on <a href="https://interactjs.io/" target="_blank">InteractJS</a> library. 
+            The choice is mainly based on capabilities to handle touch events - 
+            that was a problem with regular drag&drop API 
+            as well as with a lot of available UI libraries.
           </li>
         </ul>
       </article>
@@ -169,13 +177,15 @@
       </article>
     </main>
     <footer>
-      <ul class="foot">
-        <li class="foot__link"><a id="github-link" target="blank" href="https://github.com/Roma-V">Github</a></li>
-        <li class="foot__link"><a id="linkedin-link" target="blank" href="https://www.linkedin.com/in/roma-vass-39a869ba">LinkedIn</a></li>
-        <li class="foot__link"><a id="email-link" href="mailto:roman.m.vasilyev@gmail.com">Email</a></li>
-      </ul>
-      <div id="copyright">Copyright &copy; 2021 | Roman Vasilyev</div>
-      <p class="foot__compliance">
+      <div class="foot">
+        <ul class="foot__list">
+          <li class="foot__link"><a id="github-link" target="blank" href="https://github.com/Roma-V">Github</a></li>
+          <li class="foot__link"><a id="linkedin-link" target="blank" href="https://www.linkedin.com/in/roma-vass-39a869ba">LinkedIn</a></li>
+          <li class="foot__link"><a id="email-link" href="mailto:roman.m.vasilyev@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <p class="foot" id="copyright">Copyright &copy; 2021 | Roman Vasilyev</p>
+      <p class="foot">
         <a href="https://jigsaw.w3.org/css-validator/check/referer">
             <img style="border:0;width:88px;height:31px"
                 src="https://jigsaw.w3.org/css-validator/images/vcss"
